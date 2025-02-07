@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(/assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(/assets/fonts/static/Inter-Bold.ttf);
+}
+:root {
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+
+    --fs: 1rem;
+    --ff-inter: "Inter";
+    --ff-inter-SemiBold: "Inter-SemiBold";
+    --ff-inter-Bold: "Inter-Bold";
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+*::before, *::after, * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--clr-white);
+    font-family: var(--ff-inter);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--clr-grey-900);
+    width: 100%;
+}
+.user {
+    height: auto;
+    width: 21rem;
+    background-color: var(--clr-grey-800);
+    border-radius: .5rem;
+}
+.user__basic-info {
+    text-align: center;
+}
+.user__avatar {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.user__name {
+    margin: .5rem 0;
+}
+.user__location {
+    color: var(--clr-green);
+    font-weight: var(--fw-600);
+    margin: .5rem 0;
+}
+.user__position {
+    margin: 1.5rem 0 1rem 0;
+}
+
+.user__social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+}
+.user__link-button {
+    font-weight: var(--fw-600);
+    margin: .5rem 0;
+    border-radius: .5rem;
+    width: 100%;
+    padding: .8rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--clr-white);
+    background-color: var(--clr-grey-700);
+}
+.user__link-button:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: var(--clr-green);
+    color: var(--clr-grey-900);
+}
+.attribution {
+    margin-top: 1rem;
+    font-size: .8rem;
+}
+
