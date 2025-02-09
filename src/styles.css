@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Inter";
-    src: url(/assets/fonts/static/Inter-Regular.ttf);
+    src: url(../assets/fonts/static/Inter-Regular.ttf);
 }
 @font-face {
     font-family: "Inter-SemiBold";
-    src: url(/assets/fonts/static/Inter-SemiBold.ttf);
+    src: url(../assets/fonts/static/Inter-SemiBold.ttf);
 }
 @font-face {
     font-family: "Inter-Bold";
-    src: url(/assets/fonts/static/Inter-Bold.ttf);
+    src: url(../assets/fonts/static/Inter-Bold.ttf);
 }
 :root {
     --clr-green: hsl(75, 94%, 57%);
